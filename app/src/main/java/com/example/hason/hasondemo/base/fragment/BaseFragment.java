@@ -24,7 +24,7 @@ import rx.subscriptions.CompositeSubscription;
  */
 
 @SuppressWarnings("WeakerAccess")
-public abstract class BaseFragment extends Fragment {
+public abstract class BaseFragment<VH extends DataBindingUtil> extends Fragment {
     protected Context mContext;
     protected View mRoot;
     protected Bundle mBundle;
